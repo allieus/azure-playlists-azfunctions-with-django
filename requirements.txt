@@ -9,3 +9,6 @@ django-environ
 
 djangorestframework
 pillow
+
+pyodbc
+django-mssql-backend
