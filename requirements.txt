@@ -12,3 +12,5 @@ pillow
 
 pyodbc
 django-mssql-backend
+
+django-storages[azure]

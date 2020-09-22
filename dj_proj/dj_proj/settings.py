@@ -134,3 +134,9 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR.parent / 'media'
+
+STATICFILES_STORAGE = 'dj_proj.storages.StaticAzureStorage'
+DEFAULT_FILE_STORAGE = 'dj_proj.storages.MediaAzureStorage'
+
+AZURE_ACCOUNT_NAME = env.str('AZURE_ACCOUNT_NAME')
+AZURE_ACCOUNT_KEY = env.str('AZURE_ACCOUNT_KEY')
