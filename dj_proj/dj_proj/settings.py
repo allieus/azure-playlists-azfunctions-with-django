@@ -37,9 +37,9 @@ except (IOError, KeyError):
 SECRET_KEY = '+ea+w!#vd8hbhmo==yfb)yw#c(x#*l=gc@2m@tw-58e1o4e!ah'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env.bool('DEBUG', True)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=[])
 
 
 # Application definition
